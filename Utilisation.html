@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAÉS1.03 Installation d’un poste pour le développement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="bandeau">
+      <h1>SAÉS1.03 Installation d’un poste pour le développement</h1>
+    </div>
+    <div class="barre">
+      <nav>
+        <ul>
+          <li><a href ="index.html">Accueil</a></li>
+          <li><a href ="Introduction.html">Introduction</a></li>
+          <li><a href ="Installation.html">Installation</a></li>
+          <li><a href ="Utilisation.html">Utilisation</a></li>
+          <li><a href ="Organisation.html">Organisation</a></li>
+          <li><a href ="ServeurWeb.html">Serveur Web</a></li>
+          <li><a href ="RapportSAE.html">Rapport</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page">
+    <div class="titre"> -- Utilisation de la Machine Virtuelle --</div>
+    <div class="pwrap">
+      <section>
+        <h2>Consignes de la SAÉ</h2>
+        <p>Pour la partie système, nous avions plusieurs consignes à executer dans la machine virtuelle. Cet onglet explique toutes ces consignes.</p>
+      </section>
+      <section>
+        <h2>Ajout de comptes avec la commande <code>adduser</code></h2>
+        <p>Pour ajouter des comptes, il faut utiliser la commande <code>sudo adduser</code> comme suit :</p>
+        <pre>sudo adduser nom_utilisateur</pre>
+        <img src="ajout_user.png" alt="Commande ajouter un utilisateur">
+        <p>La commande <code>--allow-bad-names</code> permet d'accepter des caractères normalement interdits dans les noms d'utilisateur. Sinon, vous pouvez également modifier la configuration de <code>adduser.conf</code> avec la commande suivante :</p>
+        <pre>sudo nano /etc/adduser.conf</pre>
+        <p>Sinon, ceci est affiché :</p>
+        <img src="erreur.png" alt="Message d'erreur">
+        <p>Ainsi, lorsqu'on lance la machine virtuelle, voici ce qui s'affiche :</p>
+        <img src="users.png" alt="Affichage des utilisateurs de la machine virtuelle">
+      </section>
+
+      <section>
+        <h2>Attribution des droits d'administrateur</h2>
+        <p>Pour que le compte <code>admin_Gr06_Trinome05</code> ait les droits d'administrateur, il faut l'ajouter au groupe des administrateurs (ou au groupe <code>sudo</code>) avec la commande suivante :</p>
+        <pre>sudo usermod -aG sudo admin_Gr06_Trinome05</pre>
+        <img src="droits.png" alt="Message d'erreur">
+        <p>Une fois cette commande exécutée, le compte <code>admin_Gr06_Trinome05</code> aura les privilèges administratifs nécessaires.</p>
+      </section>
+
+      <section>
+        <h2>Personnalisation de l'invite de commande</h2>
+        <p>Il est possible de personnaliser l'invite de commande (prompt) en utilisant des variables. Par exemple, voici quelques options :</p>
+        <img src="variables_prompt.png" alt="Variable personnalisant le prompt">
+        <ul>
+          <li><code>\t</code> : affiche l'heure actuelle</li>
+          <li><code>\u</code> : affiche le nom de l'utilisateur</li>
+          <li><code>\H</code> : affiche le nom de l'hôte</li>
+          <li><code>\W</code> : affiche le répertoire courant</li>
+        </ul>
+        <p>Si vous voulez que l'invite de commande affiche seulement le nom de l'utilisateur, vous pouvez modifier <code>PS1</code> comme suit :</p>
+        <pre>PS1="\\u "</pre>
+        <p>Cependant, cette modification ne persistera que tant que vous ne changez pas de compte. Pour que ce changement soit permanent, même après une déconnexion, vous devez modifier le fichier <code>.bashrc</code> comme suit :</p>
+        <pre>nano ~/.bashrc</pre>
+        <p>Ajoutez ou modifiez la ligne correspondante pour appliquer la personnalisation de manière persistante.</p>
+      </section>
+    </div>
+
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="groupe">
+        Groupe N° 5 : Alyssa AUBRY - Alicia BESSAS - Guillaume MARTINS
+      </div>
+    </div>
+
+  </footer>
+
+</div>
+</body>
+</html>

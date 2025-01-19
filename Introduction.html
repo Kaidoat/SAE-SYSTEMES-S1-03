@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAÉS1.03 Installation d’un poste pour le développement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="bandeau">
+      <h1>SAÉS1.03 Installation d’un poste pour le développement</h1>
+    </div>
+    <div class="barre">
+      <nav>
+        <ul>
+          <li><a href ="index.html">Accueil</a></li>
+          <li><a href ="Introduction.html">Introduction</a></li>
+          <li><a href ="Installation.html">Installation</a></li>
+          <li><a href ="Utilisation.html">Utilisation</a></li>
+          <li><a href ="Organisation.html">Organisation</a></li>
+          <li><a href ="ServeurWeb.html">Serveur Web</a></li>
+          <li><a href ="RapportSAE.html">Rapport</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page">
+    <div class="titre">-- Résumé sur la Virtualisation --</div>
+    <div class="pwrap">
+
+      <!-- Section 1 -->
+      <section class="one">
+        <h2>Définition de la virtualisation</h2>
+        <p>La virtualisation est une technologie qui permet de créer des versions virtuelles (ou simulées) de ressources physiques...</p>
+        <p>Il existe différentes formes de virtualisation, telles que :</p>
+        <ul>
+          <li>La virtualisation de serveur</li>
+          <li>La virtualisation de stockage</li>
+          <li>La virtualisation de réseau</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="two">
+        <h2>Différence entre émulateur, simulateur et outils de virtualisation</h2>
+        <ul>
+          <li><strong>Émulateur</strong> : Reproduction exacte d’un système dans un environnement différent.</li>
+          <li><strong>Simulateur</strong> : Reproduction approximative d’un comportement ou d’un processus sans reproduire entièrement le système.</li>
+          <li><strong>Virtualisation</strong> : Création d’environnements isolés sur un même matériel physique, permettant l'exécution de multiples systèmes ou applications en parallèle.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="three">
+        <h2>Type de virtualisation pour les environnements</h2>
+        <ul>
+          <li><strong>VirtualBox</strong> : Virtualisation de type 2 (hébergée).</li>
+          <li><strong>VMware Workstation</strong> : Virtualisation de type 2 (hébergée).</li>
+          <li><strong>Stratus</strong> : Virtualisation de type 1 (bare-metal).</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="four">
+        <h2>Forme/Lieu de sauvegarde de la machine virtuelle créée</h2>
+        <h3>VirtualBox/VMware Workstation</h3>
+        <ul>
+          <li>Fichiers de disque virtuel (VHD, VMDK) et paramètres de configuration.</li>
+          <li>Stockage sur disque local ou support externe.</li>
+        </ul>
+        <h3>Stratus</h3>
+        <ul>
+          <li>Sauvegardes via snapshots ou réplication, stockées sur RAID ou serveur distant.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="five">
+        <h2>Choix techniques possibles et justification</h2>
+        <ul>
+          <li><strong>CPU</strong> : Nombre de cœurs en fonction des besoins (1-2 pour tests, 4+ pour performances).</li>
+          <li><strong>RAM</strong> : 2 Go (Linux léger) à 8 Go (Windows ou logiciels gourmands).</li>
+          <li><strong>Disque</strong> : Taille dynamique (optimise espace) ou fixe (réserve).</li>
+          <li><strong>Réseau</strong> :
+            <ul>
+              <li>NAT (accès Internet sécurisé).</li>
+              <li>Bridge (connexion directe au réseau).</li>
+              <li>Host-only (isolé pour tests internes).</li>
+            </ul>
+          </li>
+          <li><strong>Périphériques</strong> : Activer USB ou partage de dossiers si nécessaire.</li>
+        </ul>
+      </section>
+    </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="groupe">
+          Groupe N° 5 : Alyssa AUBRY - Alicia BESSAS - Guillaume MARTINS
+        </div>
+      </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* RESET GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+/* GÉNÉRAL */
+body {
+    background-color: #fcfaf0;
+}
+
+h2 {
+    color: #f36b5b;
+}
+
+.pale {
+    color: #f36b5b;
+}
+
+/* STRUCTURE PRINCIPALE */
+.page {
+    position: relative;
+    z-index: 5;
+    padding: 3rem 0 7rem;
+}
+
+.page .pwrap {
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.pwrap {
+    max-width: 1010px;
+}
+
+/* TITRE PRINCIPAL */
+.titre {
+    text-align: center;
+    padding: 50px;
+    color: #f36b5b;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 10px 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #1A1E24;
+    text-align: justify;
+    padding: 20px 60px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f36b5b; /* Change la couleur du texte au survol */
+}
+
+/* BARRE DE NAVIGATION */
+.barre  {
+    padding: 0;
+    border-bottom: 0.1rem solid rgba(26, 30, 36, 0.2);
+    border-top: 0.1rem solid rgba(26, 30, 36, 0.2);
+}
+
+/* BANNIERE */
+.bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    color: #f36b5b;
+}
+
+/* SECTIONS */
+section {
+    background-color: #fefdfa; /* Couleur de fond */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    margin: 20px auto; /* Espacement externe et centrage */
+    max-width: 900px; /* Largeur maximale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre */
+    border: 1px solid #f36b5b; /* Bordure fine */
+}
+
+section img {
+    max-width: 100%; /* L'image ne dépassera pas la largeur du conteneur parent */
+    max-height: 500px; /* Ajustez cette valeur pour limiter la hauteur */
+    display: block; /* Évite les espaces indésirables autour de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    border: 1px solid #ddd; /* Ajoute une bordure légère pour la délimiter */
+    border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+/* PIED DE PAGE */
+.footer {
+    background: #1A1E24;
+    padding: 7.5rem;
+}
+
+.footer .groupe {
+    font-family: "Roboto", Arial, Tahoma, Verdana, Helvetica, sans-serif;
+    color: #fefdfa;
+    text-align: center;
+}

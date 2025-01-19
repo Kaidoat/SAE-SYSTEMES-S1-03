@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAÉS1.03 Installation d’un poste pour le développement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="bandeau">
+      <h1>SAÉS1.03 Installation d’un poste pour le développement</h1>
+    </div>
+    <div class="barre">
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Introduction.html">Introduction</a></li>
+          <li><a href="Installation.html">Installation</a></li>
+          <li><a href ="Utilisation.html">Utilisation</a></li>
+          <li><a href="Organisation.html">Organisation</a></li>
+          <li><a href="ServeurWeb.html">Serveur Web</a></li>
+          <li><a href ="RapportSAE.html">Rapport</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="titre"> -- Installation d'une Machine Virtuelle --</div>
+    <div class="pwrap">
+      <section>
+        <h2>Étape 0 : S’assurer que la virtualisation est bien activée sur la machine physique</h2>
+        <p>Il est important de s’assurer que la virtualisation est activée sur la machine physique. Si ce n'est pas le cas, il faudra l'activer dans le BIOS.</p>
+      </section>
+
+      <section>
+        <h2>Étape 1 : Télécharger un logiciel de virtualisation</h2>
+        <p>Dans un premier temps, il faut télécharger un logiciel de virtualisation. Plusieurs options existent, telles que VMware Workstation Player ou QEMU, mais nous privilégions VirtualBox Oracle pour son interface intuitive.</p>
+        <p>Rendez-vous sur <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">https://www.virtualbox.org/wiki/Downloads</a> et choisissez la version correspondant à votre système d’exploitation actuel (Windows dans notre cas).</p>
+        <div>
+          <img src="image_virtualbox.png" alt="Téléchargement de VirtualBox">
+        </div>
+      </section>
+
+      <section>
+        <h2>Étape 2 : Télécharger un fichier .iso</h2>
+        <p>Ensuite, il faut télécharger le fichier .iso nécessaire pour fournir à la machine virtuelle les fichiers d’installation du système d’exploitation. Nous choisissons ici Ubuntu, mais vous pouvez aussi utiliser Debian ou d'autres distributions Linux.</p>
+        <p>Rendez-vous sur <a href="https://ubuntu.com/download/desktop" target="_blank">https://ubuntu.com/download/desktop</a> pour télécharger le fichier .iso d'Ubuntu.</p>
+        <div class="image">
+          <img src="image_ubuntu.png" alt="Téléchargement de Ubuntu">
+        </div>
+      </section>
+
+      <section>
+        <h2>Étape 3 : Configuration de la machine virtuelle</h2>
+
+        <h3>Étape 3.1 : Lancer Oracle VirtualBox</h3>
+        <p>Une fois le téléchargement terminé, lancez Oracle VirtualBox. Vous arriverez sur l'interface suivante (qui peut légèrement varier selon la version de l'application).</p>
+        <div>
+          <img src="image_virtualbox_interface.png" alt="Interface de VirtualBox">
+        </div>
+        <p>Ensuite, cliquez sur le bouton bleu "Nouvelle" en haut de l’interface pour créer une nouvelle machine virtuelle.</p>
+
+        <h3>Étape 3.2 : Renseigner les informations de la machine virtuelle</h3>
+        <p>Une fenêtre s’ouvrira et vous devrez entrer les informations de base pour votre machine virtuelle : son nom, l’emplacement où elle sera stockée sur votre machine, et le fichier ISO téléchargé précédemment.</p>
+        <p>Si vous avez choisi Ubuntu, le type et la version se configureront automatiquement sur Linux et Ubuntu (64-bit).</p>
+        <div>
+          <img src="image_virtualbox_creation.png" alt="Création de la machine virtuelle">
+        </div>
+
+        <h3>Étape 3.3 : Configurer le hardware de la machine virtuelle</h3>
+        <p>Il ne vous reste plus qu’à définir un nom d'utilisateur, un mot de passe, ainsi qu’un nom d’hôte pour la machine virtuelle. Ensuite, vous devrez allouer de la mémoire vive et des processeurs à la machine.</p>
+        <p><strong><span class="pale">ATTENTION</span> :</strong>  Ne donnez pas trop de ressources à la machine virtuelle, cela pourrait ralentir votre machine physique et virtuelle.</p>
+        <p>Vous pourrez aussi choisir si vous voulez créer un disque dur virtuel, qui sera plus portable mais plus lent, ou bien utiliser le disque dur de la machine physique, qui est plus rapide mais moins portable.</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="groupe">
+        Groupe N° 5 : Alyssa AUBRY - Alicia BESSAS - Guillaume MARTINS
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
